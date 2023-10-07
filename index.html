@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Calculator</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Food Calculator</h1>
+    <label for="category">Select Category:</label>
+    <select id="category"></select><br>
+
+    <label for="foodItem">Select Food Item:</label>
+    <select id="foodItem"></select><br>
+
+    <label for="gramInput">Enter Grams:</label>
+    <input type="text" id="gramInput" placeholder="Enter grams"><br>
+
+    <button id="calculate">Calculate</button>
+    <button id="total">Total</button>
+    <button id="clear">Clear</button>
+
+    <h2>Calculated Results:</h2>
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Food Item</th>
+                <th>Grams</th>
+                <th>Energy (kcal)</th>
+                <th>Protein (g)</th>
+                <th>Fat (g)</th>
+                <th>Minerals (g)</th>
+                <th>Fibre (g)</th>
+                <th>Carbos (g)</th>
+                <th>Calcium (mg)</th>
+                <th>Phosphorous (mg)</th>
+                <th>Iron (mg)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Results will be displayed here -->
+        </tbody>
+    </table>
+
+    <h2>Total Parameters:</h2>
+    <table id="totalTable">
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>Total Grams</th>
+                <th>Total Energy (kcal)</th>
+                <th>Total Protein (g)</th>
+                <th>Total Fat (g)</th>
+                <th>Total Minerals (g)</th>
+                <th>Total Fibre (g)</th>
+                <th>Total Carbos (g)</th>
+                <th>Total Calcium (mg)</th>
+                <th>Total Phosphorous (mg)</th>
+                <th>Total Iron (mg)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Total parameters will be displayed here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
