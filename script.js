@@ -75,6 +75,13 @@ document.addEventListener("DOMContentLoaded", function () {
             // Create a new table row and add it to the table
             const newRow = resultsTable.insertRow();
             const foodItemCell = newRow.insertCell(0);
+            // Inside the "Calculate" button click event
+
+            const categoryCell = newRow.insertCell(0); 
+            // Add this line
+            categoryCell.textContent= selectedCategory; 
+            // Add this line
+
 
             // Display results in the table
             foodItemCell.textContent = selectedFoodItem;
@@ -89,6 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Clear the input fields
             gramInput.value = "";
+            
         });
     });
 
@@ -117,6 +125,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Create a new table row for the total and add it to the table
         const newRow = totalTable.insertRow();
         const parameterCell = newRow.insertCell(0);
+        // Inside the "Total" button click event
+        const categoryTotalCell = newRow.insertCell(0); 
+        // Add this line
+        categoryTotalCell.textContent= "Total"; 
+        // Add this line
 
         // Display the total results in the table
         parameterCell.textContent = "Total";
